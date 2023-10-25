@@ -46,13 +46,31 @@ h3 {
   font-weight: 600;
 }
 
-#centrale {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 7px;
-  width: 100%;
-  order: -1;
+@media screen and (max-width: 575px) {
+  #centrale {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 7px;
+    width: 100%;
+    order: -1;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #centrale {
+    width: 20%;
+    order: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 7px;
+  }
+  .navbar ul li {
+    width: 110px;
+  }
+  .navabar ul {
+    justify-content: space-around;
+  }
 }
 .centrale img {
   margin-right: 20px;
